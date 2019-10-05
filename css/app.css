@@ -1,5 +1,75 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 body {
   background: #0d3166;
   color: #c857a0; }
+
+.wallpaper {
+  background: url("../img/desk_laptop.jpg") 50% 0 no-repeat fixed;
+  background-size: cover;
+  height: 550px; }
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.share {
+  width: 58px;
+  height: 58px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s linear; }
+
+.share .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 25px; }
+
+.share:hover {
+  width: 70px; }
+
+.facebook {
+  background: #3B5998;
+  color: white; }
+
+.twitter {
+  background: #55ACEE;
+  color: white; }
+
+.google {
+  background: #dd4b39;
+  color: white; }
+
+.linkedin {
+  background: #007bb5;
+  color: white; }
+
+.mail-icon {
+  background: #bb0000;
+  color: white; }
+
+.github {
+  background: #222;
+  color: #eaeaea; }
+
+#profile {
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 200px;
+  border: 2px solid white;
+  margin-top: 10px; }
 
 /*# sourceMappingURL=app.css.map */
