@@ -6,12 +6,21 @@
   padding: 0; }
 
 body {
-  background: #0d3166;
-  color: #c857a0; }
+  background: #0d3166; }
 
 .wallpaper {
   background: url("../img/desk_laptop.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
+  height: 550px; }
+
+.wallpaper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
   height: 550px; }
 
 .icon-bar {
@@ -19,7 +28,8 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  z-index: 2; }
 
 .share {
   width: 58px;
@@ -60,7 +70,7 @@ body {
   color: white; }
 
 .github {
-  background: #222;
+  background: #000000;
   color: #eaeaea; }
 
 #profile {
@@ -70,6 +80,28 @@ body {
   border-radius: 50%;
   width: 200px;
   border: 2px solid white;
-  margin-top: 10px; }
+  margin-top: 10px;
+  transform: translate(1%, 1%); }
+
+#writing-text {
+  text-align: center;
+  color: #7ed6df;
+  font-size: 2.5em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  transform: translate(1%, 1%); }
+
+#intro {
+  text-align: center;
+  color: #dff9fb;
+  font-size: 2.5em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  transform: translate(1%, 1%); }
+
+@media only screen and (max-width: 480px) {
+  #intro {
+    text-align: right; }
+
+  #writing-text {
+    text-align: right; } }
 
 /*# sourceMappingURL=app.css.map */
